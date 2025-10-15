@@ -1,39 +1,38 @@
-body {
+body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f4f6f8;
     color: #003366;
-    min-height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
-    padding: 20px;
+    align-items: center;
+    height: 100vh;
     margin: 0;
-    box-sizing: border-box;
 }
-
-.container {
+ 
+.container{
     background-color: #ffffff;
     padding: 30px;
     border-radius: 12px;
     box-shadow: 0 0 20px rgba(0, 51, 102, 0.3);
-    width: 100%;
+    width: 90%;
     max-width: 900px;
     transition: all 0.3s ease-in-out;
 }
-
-.container:hover {
+ 
+.container:hover{
     box-shadow: 0 0 25px rgba(247, 148, 29, 0.4);
 }
-
-h1 {
+ 
+h1{
     text-align: center;
     color: #003366;
     font-size: 28px;
     margin-bottom: 20px;
     position: relative;
 }
-
-h1::after {
+ 
+/* esse bloco de codigo coloca uma linha decorativa */
+h1::after{
     content: "";
     display: block;
     width: 60px;
@@ -41,16 +40,16 @@ h1::after {
     background-color: #f7941d;
     margin: 8px auto 0;
 }
-
-form {
+ 
+form{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
     margin-bottom: 20px;
 }
-
-input {
+ 
+input{
     padding: 10px;
     border-radius: 8px;
     border: 1px solid #ccc;
@@ -58,13 +57,13 @@ input {
     font-size: 15px;
     transition: border-color 0.3s;
 }
-
-input:hover {
+ 
+input:hover{
     border-color: #f7941d;
     outline: none;
 }
-
-button {
+ 
+button{
     background-color: #003366;
     border: none;
     padding: 10px 16px;
@@ -73,103 +72,63 @@ button {
     color: #fff;
     font-weight: bold;
     transition: background-color 0.3s ease;
+ 
 }
-
-button:hover {
+ 
+button:hover{
     background-color: #f7941d;
 }
-
-table {
+ 
+table{
     width: 100%;
     border-collapse: collapse;
     text-align: center;
     background-color: #ffffff;
     border-radius: 10px;
-    overflow-x: auto;
+    overflow: hidden;
 }
-
-th {
-    background-color: #003366;
-    color: white;
-    padding: 10px;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    white-space: nowrap;
+ 
+th{
+   background-color: #003366;
+   color: white;
+   padding: 10px;
+   text-transform: uppercase;
+   letter-spacing: 0.5px;
 }
-
-td {
+ 
+td{
     padding: 10px;
     border-bottom: 1px solid #ddd;
-    word-wrap: break-word;
 }
 
-img {
-    width: 70px;
+img{
+    width: 80px;
     height: auto;
 }
-
-button.edit {
+button.edit{
     background-color: #007bff;
 }
 
-button.edit:hover {
+button.edit:hover{
     background-color: #0056b3;
 }
 
-button.delete {
+button.delete{
     background-color: #f44336;
 }
 
-button.delete:hover {
+button.delete:hover{
     background-color: #d32f2f;
 }
 
-#gerarPDF {
+#gerarPDF{
     margin-top: 20px;
     display: block;
     width: 100%;
     background-color: #f7941d;
 }
 
-#gerarPDF:hover {
+#gerarPDF:hover{
     background-color: #003366;
     color: #fff;
-}
-
-
-@media (max-width: 600px) {
-    .container {
-        padding: 15px;
-    }
-
-    form {
-        flex-direction: column;
-        gap: 15px;
-    }
-
-    input {
-        width: 100%;
-    }
-    
-    #gerarBtn {
-        width: 100%;
-    }
-
-    table td:nth-child(1), 
-    table th:nth-child(1),
-    table td:nth-child(4), 
-    table th:nth-child(4),
-    table td:nth-child(5), 
-    table th:nth-child(5) {
-        display: none;
-    }
-    
-    table {
-        font-size: 12px;
-    }
-
-    .edit, .delete {
-        padding: 6px 8px;
-        font-size: 10px;
-    }
 }
